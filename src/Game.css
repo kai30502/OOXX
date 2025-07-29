@@ -7,9 +7,9 @@
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
-  gap: 10px;
   margin: 20px auto;
   max-width: 320px;
+  justify-content: center
 }
 
 .square {
@@ -18,7 +18,7 @@
   font-size: 36px;
   font-weight: bold;
   background-color: #f2f2f2;
-  border: 2px solid #333;
+  border: 1px solid #333;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -31,10 +31,12 @@
 }
 
 .reset {
-  margin-top: 20px;
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
+  border: 1px;
+  border-radius: 15px;
+
 }
 
 .reset:hover {

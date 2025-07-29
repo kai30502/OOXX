@@ -60,7 +60,8 @@ const Game = () => {
 
   return (
     <div className="game">
-      <h1>OOXX 遊戲</h1>
+      <h1>圈圈叉叉</h1>
+      <p>輪到： {currentPlayer}</p>
       <div className="board">
         {board.map((_, index) => (
           <div className="row" key={index}>
@@ -69,7 +70,7 @@ const Game = () => {
         ))}
       </div>
       <button className="reset" onClick={resetGame}>重新開始</button>
-      <p>當前玩家: {currentPlayer}</p>
+      
     </div>
   );
 };
