@@ -1,0 +1,42 @@
+.game {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 320px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border: 2px solid #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #e0e0e0;
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #ddd;
+}
